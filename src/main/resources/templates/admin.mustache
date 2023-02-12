@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        class="light-style"
+        dir="ltr"
+        data-theme="theme-default"
+        data-assets-path="../assets/"
+        data-template="vertical-menu-template-free"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, admin-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>admin</title>
+
+    <meta name="description" content=""/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/logo.ico"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css"/>
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css"/>
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css"/>
+    <link rel="stylesheet" href="../assets/css/demo.css"/>
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"/>
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="nav-align-top mb-1">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <button
+                                    type="button"
+                                    class="nav-link active"
+                                    role="tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#navs-top-users"
+                                    aria-controls="navs-top-users"
+                                    aria-selected="true"
+                            >
+                                Пользователи
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button
+                                    type="button"
+                                    class="nav-link"
+                                    role="tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#navs-top-testing"
+                                    aria-controls="navs-top-testing"
+                                    aria-selected="false"
+                            >
+                                Тестирование
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button
+                                    type="button"
+                                    class="nav-link"
+                                    role="tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#navs-top-bazaVoprosov"
+                                    aria-controls="navs-top-bazaVoprosov"
+                                    aria-selected="false"
+                            >
+                                Банк вопросов
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button
+                                    type="button"
+                                    class="nav-link"
+                                    role="tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#navs-top-monotorAndStatic"
+                                    aria-controls="navs-top-monotorAndStatic"
+                                    aria-selected="false"
+                            >
+                                Мониторинг и статистика
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="navs-top-users" role="tabpanel">
+                            <!--Вкладка пользователи-->
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="nav-align-top mb-1">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link active"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-PPGAC"
+                                                        aria-controls="navs-top-PPGAC"
+                                                        aria-selected="true"
+                                                >
+                                                    Руководитель ППЭ / Член ГЭК
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-techMan"
+                                                        aria-controls="navs-top-techMan"
+                                                        aria-selected="false"
+                                                >
+                                                    Тех специалист
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-organizatorPPE"
+                                                        aria-controls="navs-top-organizatorPPE"
+                                                        aria-selected="false"
+                                                >
+                                                    Организатор ППЭ
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-publicObserver"
+                                                        aria-controls="navs-top-publicObserver"
+                                                        aria-selected="false"
+                                                >
+                                                    Общественный наблюдатель
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-experts"
+                                                        aria-controls="navs-top-experts"
+                                                        aria-selected="false"
+                                                >
+                                                    Эксперты
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button
+                                                        type="button"
+                                                        class="nav-link"
+                                                        role="tab"
+                                                        data-bs-toggle="tab"
+                                                        data-bs-target="#navs-top-students"
+                                                        aria-controls="navs-top-students"
+                                                        aria-selected="false"
+                                                >
+                                                    Обучающиеся
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active"
+                                                 id="navs-top-PPGAC" role="tabpanel">
+                                                <!--Руководитель ППЭ / Член ГЭК-->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col-sm-8">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#usersSupervisorPpe}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/usersSupervisorPpe}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!--Кнопки-->
+                                                        <div class="col-sm-4">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <button
+                                                                                type="button"
+                                                                                class="btn btn-primary"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#basicModal"
+                                                                        >
+                                                                            Новый пользователь
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <form action="/loadFile" method="post" enctype="multipart/form-data">
+                                                                            <div class="mb-3">
+                                                                                <label for="usersFile"
+                                                                                       class="form-label">Загрузить
+                                                                                    пользователей</label>
+                                                                                <input class="form-control" type="file"
+                                                                                       id="usersFile" name="file"/>
+
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                    class="btn btn-primary">
+                                                                                Загрузить
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <a href="/uploadPasswords?userRole=SUPERVISOR_PPE">
+                                                                            <button
+                                                                                    type="button"
+                                                                                    class="btn btn-primary"
+                                                                            >
+                                                                                Выгрузить логины и пароли
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="navs-top-techMan"
+                                                 role="tabpanel">
+                                                <!--Тех специалист-->
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col-sm-8">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#usersTechMan}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/usersTechMan}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!--Кнопки-->
+                                                        <div class="col-sm-4">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <button
+                                                                                type="button"
+                                                                                class="btn btn-primary"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#basicModal"
+                                                                        >
+                                                                            Новый пользователь
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <form action="/loadFile" method="post" enctype="multipart/form-data">
+                                                                            <div class="mb-3">
+                                                                                <label for="usersFile"
+                                                                                       class="form-label">Загрузить
+                                                                                    пользователей</label>
+                                                                                <input class="form-control" type="file"
+                                                                                       id="usersFile" name="file"/>
+
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                    class="btn btn-primary">
+                                                                                Загрузить
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <a href="/uploadPasswords?userRole=SUPERVISOR_PPE">
+                                                                            <button
+                                                                                    type="button"
+                                                                                    class="btn btn-primary"
+                                                                            >
+                                                                                Выгрузить логины и пароли
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="navs-top-organizatorPPE"
+                                                 role="tabpanel">
+<!--                                                organizatorPPE-->
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col-sm-8">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#organizerPpe}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/organizerPpe}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!--Кнопки-->
+                                                        <div class="col-sm-4">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <button
+                                                                                type="button"
+                                                                                class="btn btn-primary"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#basicModal"
+                                                                        >
+                                                                            Новый пользователь
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <form action="/loadFile" method="post" enctype="multipart/form-data">
+                                                                            <div class="mb-3">
+                                                                                <label for="usersFile"
+                                                                                       class="form-label">Загрузить
+                                                                                    пользователей</label>
+                                                                                <input class="form-control" type="file"
+                                                                                       id="usersFile" name="file"/>
+
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                    class="btn btn-primary">
+                                                                                Загрузить
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <a href="/uploadPasswords?userRole=SUPERVISOR_PPE">
+                                                                            <button
+                                                                                    type="button"
+                                                                                    class="btn btn-primary"
+                                                                            >
+                                                                                Выгрузить логины и пароли
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="navs-top-publicObserver"
+                                                 role="tabpanel">
+<!--                                                publicObserver-->
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col-sm-8">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#publicObserver}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/publicObserver}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!--Кнопки-->
+                                                        <div class="col-sm-4">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <button
+                                                                                type="button"
+                                                                                class="btn btn-primary"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#basicModal"
+                                                                        >
+                                                                            Новый пользователь
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <form action="/loadFile" method="post" enctype="multipart/form-data">
+                                                                            <div class="mb-3">
+                                                                                <label for="usersFile"
+                                                                                       class="form-label">Загрузить
+                                                                                    пользователей</label>
+                                                                                <input class="form-control" type="file"
+                                                                                       id="usersFile" name="file"/>
+
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                    class="btn btn-primary">
+                                                                                Загрузить
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <a href="/uploadPasswords?userRole=SUPERVISOR_PPE">
+                                                                            <button
+                                                                                    type="button"
+                                                                                    class="btn btn-primary"
+                                                                            >
+                                                                                Выгрузить логины и пароли
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="navs-top-experts"
+                                                 role="tabpanel">
+<!--                                                experts-->
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col-sm-8">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#expert}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/expert}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!--Кнопки-->
+                                                        <div class="col-sm-4">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <button
+                                                                                type="button"
+                                                                                class="btn btn-primary"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#basicModal"
+                                                                        >
+                                                                            Новый пользователь
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <form action="/loadFile" method="post" enctype="multipart/form-data">
+                                                                            <div class="mb-3">
+                                                                                <label for="usersFile"
+                                                                                       class="form-label">Загрузить
+                                                                                    пользователей</label>
+                                                                                <input class="form-control" type="file"
+                                                                                       id="usersFile" name="file"/>
+
+                                                                            </div>
+                                                                            <button type="submit"
+                                                                                    class="btn btn-primary">
+                                                                                Загрузить
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row">
+                                                                    <div class="col mb-3">
+                                                                        <a href="/uploadPasswords?userRole=SUPERVISOR_PPE">
+                                                                            <button
+                                                                                    type="button"
+                                                                                    class="btn btn-primary"
+                                                                            >
+                                                                                Выгрузить логины и пароли
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="navs-top-students"
+                                                 role="tabpanel">
+<!--                                                students-->
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!--Таблица-->
+                                                        <div class="col">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>ФИО</th>
+                                                                        <th>Управление</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="table-border-bottom-0">
+                                                                    {{#student}}
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span class="badge bg-label-warning me-1"></span>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{surname}} {{firstname}} {{secondName}}
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="dropdown">
+                                                                                    <button type="button"
+                                                                                            class="btn p-0 dropdown-toggle hide-arrow"
+                                                                                            data-bs-toggle="dropdown">
+                                                                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu">
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-edit-alt me-2"></i>
+                                                                                            Edit</a
+                                                                                        >
+                                                                                        <a class="dropdown-item"
+                                                                                           href="javascript:void(0);"
+                                                                                        ><i class="bx bx-trash me-2"></i>
+                                                                                            Delete</a
+                                                                                        >
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    {{/student}}
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-top-testing" role="tabpanel">
+                            <!--Тестирование-->
+                            <div class="container">
+                                <div class="row mb-3">
+                                    <div class="col-sm">
+                                        <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#basicModal2"
+                                        >
+                                            Создать тест
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--Картчки с тестами-->
+                                {{#testForUserList}}
+                                    <div class="row mb-3">
+                                        <div class="card shadow-none bg-transparent border border-secondary mb-3">
+                                            <div class="card-header">
+                                                <span class="badge bg-secondary">{{userRole.role}}</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">{{title}}</h5>
+                                                <p class="card-text">{{description}}</p>
+                                                <button
+                                                        type="button"
+                                                        class="btn btn-primary"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#basicModal3"
+                                                        onclick="getQuestionForTest('{{userRole}}','{{id}}')"
+                                                >
+                                                    Управление вопросами
+                                                </button>
+                                                <a>
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-primary"
+                                                            >Настройка тестирования</button>
+                                                </a>
+                                                <a href="/deleteTestForUser/?id={{id}}" class="btn btn-danger">Удалить
+                                                тест</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{/testForUserList}}
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-top-bazaVoprosov" role="tabpanel">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#basicModal4"
+                                                onclick="cleanQuestForm()"
+                                        >
+                                            Создать вопрос
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Вопрос</th>
+                                            <th>Группа</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-border-bottom-0">
+                                        {{#questions}}
+                                            <tr>
+                                                <td id="idQ" idQ="{{id}}">
+                                                    {{number}}
+                                                </td>
+                                                <td>
+                                                    <p>{{quest}}</p>
+                                                </td>
+                                                <td>
+                                                    {{userRole.role}}
+                                                </td>
+                                                <td>
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-primary"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#basicModal4"
+                                                            onclick="getQuest('{{id}}')"
+                                                    >
+                                                        Редактировать
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        {{/questions}}
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="navs-top-monotorAndStatic" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <a href="/uploadRequests">
+                                            <button
+                                                    type="button"
+                                                    class="btn btn-primary"
+                                            >
+                                                Выгрузить результаты тестирований
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                {{#requests}}
+                                <div class="row mb-2">
+                                    <div class="col-sm">
+                                        {{user.surname}} {{user.firstname}} {{user.secondName}}
+                                    </div>
+                                    <div class="col-sm">
+                                        <span class="badge bg-secondary">{{user.userRole.role}}</span>
+                                    </div>
+                                    <div class="col-sm">
+                                        {{testForUser.title}}
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="progress">
+                                            <div
+                                                    class="progress-bar"
+                                                    role="progressbar"
+                                                    style="width: {{percent}}%"
+                                                    aria-valuenow="{{countOfTrueAnswers}}"
+                                                    aria-valuemin="0"
+                                                    aria-valuemax="{{countOfAllQuestions}}"
+                                            >
+                                                {{percent}}%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/requests}}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Модальное для создания и редактирования вопросов-->
+<div class="modal fade" id="basicModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <form action="/addQuestion" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel4">Создать/редактировать вопрос</h5>
+                    <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col mb-0">
+                            <label for="qwest" class="form-label">Вопрос</label>
+                            <textarea name="quest" id="qwest"
+                                      class="form-control" placeholder="Введите вопрос"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col mb-0">
+                            <div class="col mb-3">
+                                <label for="test-type" class="form-label">Группа тестируемых</label>
+                                <select name="userRole" class="form-select" id="test-type"
+                                        aria-label="Default select example">
+                                    {{#userRole}}
+                                        {{#entrySet}}
+                                            <option value="{{key}}">{{value}}</option>
+                                        {{/entrySet}}
+                                    {{/userRole}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col mb-0">
+                            <label for="answer" class="form-label">Правильный ответ</label>
+                            <input name="answer" type="text" id="answer" class="form-control"
+                                   placeholder="Введите правильный ответ"/>
+
+                            <input name="id" type="text" id="iddd" class="form-control" hidden/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="admin-type" class="form-label">Тип вопроса</label>
+                            <select name="questionType" class="form-select" id="choiceOfAnswerSelect"
+                                    aria-label="Default select example" onchange="choiceOfAnswer()">
+                                {{#questionType}}
+                                    {{#entrySet}}
+                                        <option value="{{key}}">{{value}}</option>
+                                    {{/entrySet}}
+                                {{/questionType}}
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="row g-2" id="choiceOfAnswer" hidden>
+                        <label for="answer" class="form-label">Варианты ответа</label>
+                        <div class="col mb-0">
+                            <input name="answerOptions" type="text" id="answer" class="form-control"
+                                   placeholder="Введите вариант ответа"/>
+                        </div>
+                        <div class="col mb-0">
+                            <input name="answerOptions" type="text" id="answer" class="form-control"
+                                   placeholder="Введите вариант ответа"/>
+                        </div>
+                        <div class="col mb-0">
+                            <input name="answerOptions" type="text" id="answer" class="form-control"
+                                   placeholder="Введите вариант ответа"/>
+                        </div>
+                        <div class="col mb-0">
+                            <input name="answerOptions" type="text" id="answer" class="form-control"
+                                   placeholder="Введите вариант ответа"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Модальное окно управления тестом-->
+<div class="modal fade" id="basicModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <form action="/modifyTestForUser" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel4">Управление вопросами</h5>
+                    <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                    ></button>
+                </div>
+                <input name="id" type="text" id="idTestt" class="form-control" hidden/>
+                <div class="modal-body" id="questionForTest">
+                </div>
+                <div class="modal-footer">
+                    <button onclick="postSaveQuestionForTest()" type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Модальное окно для создания нового теста-->
+<div class="modal fade" id="basicModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="/addTestForUser" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Новый Тест</h5>
+                    <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="testTitle" class="form-label">Название теста</label>
+                            <input name="title" type="text" id="testTitle" class="form-control"
+                                   placeholder="Введите название теста"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="testDesc" class="form-label">Описание теста</label>
+                            <input name="description" type="text" id="testDesc" class="form-control"
+                                   placeholder="Введите описание теста"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="test-type" class="form-label">Группа тестируемых</label>
+                            <select name="userRole" class="form-select" id="test-type"
+                                    aria-label="Default select example">
+                                {{#userRole}}
+                                    {{#entrySet}}
+                                        <option value="{{key}}">{{value}}</option>
+                                    {{/entrySet}}
+                                {{/userRole}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно добавление нового пользователя -->
+<div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Новый пользователь</h5>
+                <form action="/addUser" method="post">
+                    <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                    ></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="admin-type" class="form-label">Группа пользователя</label>
+                        <select name="userRole" class="form-select" id="admin-type"
+                                aria-label="Default select example">
+                            {{#userRole}}
+                                {{#entrySet}}
+                                    <option value="{{key}}">{{value}}</option>
+                                {{/entrySet}}
+                            {{/userRole}}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="surnnameBasic" class="form-label">Фамилия</label>
+                        <input name="surname" type="text" id="surnnameBasic" class="form-control"
+                               placeholder="Введите фамилию"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="nameBasic" class="form-label">Имя</label>
+                        <input name="firstname" type="text" id="nameBasic" class="form-control"
+                               placeholder="Введите имя"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="otchBasic" class="form-label">Отчество</label>
+                        <input name="secondName" type="text" id="otchBasic" class="form-control"
+                               placeholder="Введите отчество"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="ooCodeBasic" class="form-label">Код ОО</label>
+                        <input name="schoolCode" type="number" id="ooCodeBasic" class="form-control"
+                               placeholder="Введите код ОО"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="../assets/js/lat.js"></script>
+
+<script src="../assets/vendor/libs/jquery/jquery.js"></script>
+<script src="../assets/vendor/libs/popper/popper.js"></script>
+<script src="../assets/vendor/js/bootstrap.js"></script>
+<script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="../assets/vendor/js/menu.js"></script>
+<script src="../assets/js/main.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Page JS -->
+<script src="../assets/js/extended-ui-perfect-scrollbar.js"></script>
+
+
+<!--latex-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
+
+
+
